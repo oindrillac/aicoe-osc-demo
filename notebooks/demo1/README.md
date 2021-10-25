@@ -1,6 +1,6 @@
-# Demo 1
+# Demo 1 - ETL and Visualizations with Open Data Hub
 
-This demo consists of jupyter notebooks and an elyra pipeline that provides an example of how to use the tools available within [Open Data Hub](https://opendatahub.io/) on an [Operate First](https://www.operate-first.cloud/) cluster to perform ETL and create interactive dashboards and visualizations of our data.
+This demo consists of jupyter notebook, an elyra pipeline and a Superset Dashboard that provides an example of how to use the tools available within [Open Data Hub](https://opendatahub.io/) on an [Operate First](https://www.operate-first.cloud/) cluster to perform ETL and create interactive dashboards and visualizations of our data.
 
 ![Demo 1 Flowchart](../../docs/assets/demo1-viz.png)
 
@@ -8,7 +8,7 @@ Above is a flowchart which demonstrates the workflow followed for this demo. Bef
 
 ## Initial Setup
 
-* In order to access the environment for the development of the project, you will have to be added to the users [here](https://github.com/orgs/os-climate/teams/odh-env-users).
+* In order to access the environment for the development of the project, you will have to be added to the users [here](https://github.com/orgs/os-climate/teams/odh-env-users). Create an issue [here](https://github.com/os-climate/aicoe-osc-demo/issues)
 
 * Once added to the user’s list, you would be able to access [JupyterHub](jupyterhub-odh-jupyterhub.apps.odh-cl1.apps.os-climate.org), Kubeflow [Pipelines](http://ml-pipeline-ui-kubeflow.apps.odh-cl1.apps.os-climate.org/), [Trino](https://cloudbeaver-odh-trino.apps.odh-cl1.apps.os-climate.org/), and the [Superset Dashboard](https://superset-secure-odh-superset.apps.odh-cl1.apps.os-climate.org/).
 
@@ -90,4 +90,4 @@ After collecting the data and ingesting it into Trino, we would want to visualiz
 
 ![SuperSet Dashboard](../../docs/assets/demo1-dashboard.gif)
 
-To learn how to use Trino Superset in order to add more visualizations, you can follow the guide [here](https://www.operate-first.cloud/users/support/docs/trino_superset_user_guide.md).
+To learn how to use Trino Superset in order to add more visualizations, you can follow the guide [here](https://www.operate-first.cloud/users/support/docs/trino_superset_user_guide.md#trino-to-superset).
