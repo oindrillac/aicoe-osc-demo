@@ -69,19 +69,19 @@ class PDFTableExtractor(BaseComponent):
         import torch
 
         device = "cpu" if not torch.cuda.is_available() else "cuda:0"
-        while not download_successful:
-            try:
-                det = init_detector(
-                    self.cscdtabnet_config, self.cscdtabnet_ckpt, device=device
-                )
-                download_successful = True
-            except OSError:
-                _logger.info(
-                    "Error while downloading cascadetabnet checkpoint. Redownloading..."
-                )
-                download_ckpt()
+        # while not download_successful:
+        #     try:
+        #         det = init_detector(
+        #             self.cscdtabnet_config, self.cscdtabnet_ckpt, device=device
+        #         )
+        #         download_successful = True
+        #     except OSError:
+        #         _logger.info(
+        #             "Error while downloading cascadetabnet checkpoint. Redownloading..."
+        #         )
+        #         download_ckpt()
 
-        return det
+        # return det
 
     @staticmethod
     def process_single_table(pdf_path, prefix, output_folder, dpi, iterable):
